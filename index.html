@@ -1,0 +1,1239 @@
+<html dir="rtl" lang="ar" class="no-js"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Stomaherb</title>
+<!-- script to print the admin localized variables -->
+<script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/16297/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					  window.location.href = "order/success/index.php";
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+</script>
+
+<style>
+
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" id="countdown-timer-style-css" href="assets/css/countdown-timer-widget.css?ver=5.7.2" media="all">
+<link rel="stylesheet" id="thwcfd-checkout-style-css" href="assets/css/thwcfd-public.min.css?ver=5.7.2" media="all">
+<link rel="stylesheet" id="hfe-style-css" href="assets/css/header-footer-elementor.css?ver=1.5.9" media="all">
+<link rel="stylesheet" id="elementor-icons-css" href="assets/css/elementor-icons.min.css?ver=5.11.0" media="all">
+<link rel="stylesheet" id="elementor-animations-css" href="assets/animations.min.css?ver=3.2.4" media="all">
+<link rel="stylesheet" id="elementor-frontend-css" href="assets/css/frontend-rtl.min.css?ver=3.2.4" media="all">
+
+<link rel="stylesheet" id="elementor-post-320-css" href="assets/css/post-320.css?ver=1623498684" media="all">
+
+<!-- <link rel="stylesheet" id="font-awesome-5-all-css" href="assets/css/all.min.css?ver=3.2.4" media="all">
+ -->
+<!--  <link rel="stylesheet" id="font-awesome-4-shim-css" href="assets/css/v4-shims.min.css?ver=3.2.4" media="all">
+ -->
+<link rel="stylesheet" id="elementor-post-140-css" href="assets/css/post-140.css?ver=1623499429" media="all">
+
+<link rel="stylesheet" id="wcf-frontend-global-css" href="assets/css/frontend-rtl.css?ver=1.6.14" media="all">
+<link rel="stylesheet" id="wcf-checkout-template-css" href="assets/css/checkout-template-rtl.css?ver=1.6.14" media="all">
+<link rel="stylesheet" id="cartflows-google-fonts-css" href="//fonts.googleapis.com/css?family=Montserrat%3A600%7COswald%3A500&amp;ver=1.6.14" media="all">
+<link rel="stylesheet" id="elementor-pro-css" href="https://eslai.com/wp-content/plugins/elementor-pro/assets/css/frontend-rtl.min.css?ver=3.0.4" media="all">
+<link rel="stylesheet" id="wcf-normalize-frontend-global-css" href="https://eslai.com/wp-content/plugins/cartflows/assets/css/cartflows-normalize-rtl.css?ver=1.6.14" media="all">
+<link rel="stylesheet" id="elementor-icons-shared-0-css" href="assets/css/fontawesome.min.css?ver=5.15.1" media="all">
+<link rel="stylesheet" id="elementor-icons-fa-regular-css" href="assets/css/regular.min.css?ver=5.15.1" media="all">
+<script src="jquery.cookie.min.js?ver=1.4.1" id="jquery-cookie-js"></script>
+
+<link rel="icon" href="https://eslai.com/wp-content/uploads/2021/04/cropped-cropped-icon-32x32.png" sizes="32x32">
+<link rel="icon" href="https://eslai.com/wp-content/uploads/2021/04/cropped-cropped-icon-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://eslai.com/wp-content/uploads/2021/04/cropped-cropped-icon-180x180.png">
+<meta name="msapplication-TileImage" content="https://eslai.com/wp-content/uploads/2021/04/cropped-cropped-icon-270x270.png">
+		<style id="wp-custom-css">
+			html,
+body{
+width:100%;
+overflow-x:hidden;
+}		</style>
+		<script async="" src="https://script.hotjar.com/modules.1eae5f578812029ee612.js" charset="utf-8"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style>
+		
+		
+	<script type="text/javascript" src="jquery-2.1.3.min.js"></script>
+
+<script>
+$(document).ready(function(){
+	$("#btn_order").click(function(){
+	var name_client = $("#Nom").val();
+	var phone_client = $("#Tele").val();
+	var city_client = $("#Ville").val();
+	if(name_client != "" && phone_client != "" && city_client != ""){
+	$(this).html('المرجو الإنتظار');
+	}
+	});
+});
+</script>	
+		
+
+</head>
+
+<body  style="">
+
+		<div class="cartflows-container">
+
+			<div data-elementor-type="wp-post" data-elementor-id="140" class="elementor elementor-140" data-elementor-settings="[]">
+							<div class="elementor-section-wrap">
+			<section class="elementor-section elementor-top-section elementor-element elementor-element-6bcfeb9c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6bcfeb9c" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-background-overlay"></div>
+			<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4f8d28d2" data-id="4f8d28d2" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-45b2a83e elementor-widget elementor-widget-heading" data-id="45b2a83e" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+							<h1 class="elementor-heading-title elementor-size-default">الحل النهائي  لمشاكل المعدة والجهاز الهضمي</h1>		</div>
+						</div>
+						<div class="elementor-element elementor-element-4187268c elementor-widget elementor-widget-heading" data-id="4187268c" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h4 class="elementor-heading-title elementor-size-default">و أخيرا الحل النهائي  لمشاكل المعدة والجهاز الهضمي الأعشاب الطبية </h4>		</div>
+							</div>
+							<div class="elementor-element elementor-element-19ca6479 elementor-align-center elementor-mobile-align-justify elementor-widget elementor-widget-button" data-id="19ca6479" data-element_type="widget" data-widget_type="button.default">
+								<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+										<a href="#scroll-checkout" class="elementor-button-link elementor-button elementor-size-lg" role="button">
+											<span class="elementor-button-content-wrapper">
+												<span class=" elementor-align-icon-left">
+												
+													<i class="fa  fa-arrow-circle-o-down"></i>		
+												</span>
+													<span class="elementor-button-text">إضغط هنا لطلب المنتج </span>
+												</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="elementor-element elementor-element-7778d4c elementor-widget elementor-widget-spacer" data-id="7778d4c" data-element_type="widget" data-widget_type="spacer.default">
+									<div class="elementor-widget-container">
+										<div class="elementor-spacer">
+											<div class="elementor-spacer-inner"></div>
+										</div>
+									</div>
+								</div>
+								<div class="elementor-element elementor-element-006bccb elementor-widget elementor-widget-heading" data-id="006bccb" data-element_type="widget" data-widget_type="heading.default">
+									<div class="elementor-widget-container">
+										<h2 class="elementor-heading-title elementor-size-default">المنتج مرخص من طرف مكتب السلامة الصحية :</h2>		</div>
+									</div>
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-11686f78 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="11686f78" data-element_type="section">
+							<div class="elementor-container elementor-column-gap-default">
+								<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-7b594e86" data-id="7b594e86" data-element_type="column">
+									<div class="elementor-widget-wrap elementor-element-populated">
+										<div class="elementor-element elementor-element-7032bfd elementor-widget elementor-widget-image" data-id="7032bfd" data-element_type="widget" data-widget_type="image.default">
+											<div class="elementor-widget-container">
+												<img width="160" height="60" src="assets/pic/onsa-png.png" class="attachment-large size-large" alt="" loading="lazy">					
+											</div>
+										 </div>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</section>
+<section class="elementor-section elementor-top-section elementor-element elementor-element-1d61f1fe elementor-reverse-tablet elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1d61f1fe" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+	<div class="elementor-container elementor-column-gap-default">
+		<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-61ac5e86" data-id="61ac5e86" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;slideshow&quot;,&quot;background_slideshow_gallery&quot;:[],&quot;background_slideshow_slide_duration&quot;:5000,&quot;background_slideshow_slide_transition&quot;:&quot;fade&quot;,&quot;background_slideshow_transition_duration&quot;:500}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+				<div class="elementor-element elementor-element-6ee3dcd4 elementor-widget elementor-widget-heading" data-id="6ee3dcd4" data-element_type="widget" data-widget_type="heading.default">
+					<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">المنتج الفعال الذي أثبت كفاءته في القضاء على كل هته الأعراض</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-2d479d elementor-widget elementor-widget-heading" data-id="2d479d" data-element_type="widget" data-widget_type="heading.default">
+					<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default"> أغلب الأشخاص يعانون من مشاكل في المعدة و الجهاز الهضمي   من فترة إلى أخرى، منها أسباب مرضية وأخرى غير مرضيّة مثل التحسّس من أطعمة معيّنة أو تناول بعض الأدوية التي قد تسبّب مشاكل للجهاز الهضمي، لذا وجب الإسرع فعلاجها للحد من مضاعفاتها الخطيرة </h4>		</div>
+				</div>
+				<div class="elementor-element elementor-element-e75ecea elementor-widget elementor-widget-heading" data-id="e75ecea" data-element_type="widget" data-widget_type="heading.default">
+					<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">و من مميزات منتج "ستوماهيرب" أنه يقضي على كل هته الأعراض :</h2>		</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-74f8922 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="74f8922" data-element_type="section">
+					<div class="elementor-container elementor-column-gap-default">
+						<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-b3065a3" data-id="b3065a3" data-element_type="column">
+							<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-c0311c0 elementor-align-right elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="c0311c0" data-element_type="widget" data-widget_type="icon-list.default">
+									<div class="elementor-widget-container">
+										<ul class="elementor-icon-list-items">
+											<li class="elementor-icon-list-item">
+												<span class="elementor-icon-list-icon">
+												<i aria-hidden="true" class="fa fa-check"></i>						</span>
+												<span class="elementor-icon-list-text">التهاب المعدة والأمعاء</span>
+											</li>
+											<li class="elementor-icon-list-item">
+												<span class="elementor-icon-list-icon">
+												<i aria-hidden="true" class="fa fa-check"></i>						</span>
+												<span class="elementor-icon-list-text">شعور بالتشنج وألم في البطن</span>
+											</li>
+											<li class="elementor-icon-list-item">
+												<span class="elementor-icon-list-icon">
+												<i aria-hidden="true" class="fa fa-check"></i>						</span>
+												<span class="elementor-icon-list-text">عسر الهضم</span>
+											</li>
+											<li class="elementor-icon-list-item">
+												<span class="elementor-icon-list-icon">
+												<i aria-hidden="true" class="fa fa-check"></i>						</span>
+												<span class="elementor-icon-list-text">قرحة المعدة والأمعاء</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-1dfe33b" data-id="1dfe33b" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+	<div class="elementor-element elementor-element-3454c3b elementor-align-right elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="3454c3b" data-element_type="widget" data-widget_type="icon-list.default">
+		<div class="elementor-widget-container">
+			<ul class="elementor-icon-list-items">
+				<li class="elementor-icon-list-item">
+					<span class="elementor-icon-list-icon">
+						<i aria-hidden="true" class="fa fa-check"></i>						</span>
+						<span class="elementor-icon-list-text">الانتفاخ ووجود الغازات في البطن</span>
+					</li>
+					<li class="elementor-icon-list-item">
+						<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fa fa-check"></i>						</span>
+							<span class="elementor-icon-list-text">الإسهال أو الأمساك</span>
+						</li>
+						<li class="elementor-icon-list-item">
+							<span class="elementor-icon-list-icon">
+								<i aria-hidden="true" class="fa fa-check"></i>						</span>
+								<span class="elementor-icon-list-text">فقدان الشهية</span>
+							</li>
+							<li class="elementor-icon-list-item">
+								<span class="elementor-icon-list-icon">
+									<i aria-hidden="true" class="fa fa-check"></i>						</span>
+									<span class="elementor-icon-list-text">كسل الأمعاء</span>
+								</li>
+								<li class="elementor-icon-list-item">
+									<span class="elementor-icon-list-icon">
+										<i aria-hidden="true" class="fa fa-check"></i>						</span>
+										<span class="elementor-icon-list-text">الغثيان</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-25ec7ff7" data-id="25ec7ff7" data-element_type="column">
+	<div class="elementor-widget-wrap elementor-element-populated">
+		<div class="elementor-element elementor-element-c617aa5 elementor-widget elementor-widget-image" data-id="c617aa5" data-element_type="widget" data-widget_type="image.default">
+			<div class="elementor-widget-container">
+				<img width="920" height="1000" src="assets/pic/غلاف-مجلة-1-1.png" class="attachment-full size-full" alt=""  >															</div>
+			</div>
+			<div class="elementor-element elementor-element-0a01914 elementor-align-center elementor-mobile-align-justify elementor-widget elementor-widget-button" data-id="0a01914" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+						<a href="#scroll-checkout" class="elementor-button-link elementor-button elementor-size-lg" role="button">
+							<span class="elementor-button-content-wrapper">
+								<span class="elementor-button-icon elementor-align-icon-left">
+									<i class="fa  fa-arrow-circle-o-down"></i>
+												</span>
+									<span class="elementor-button-text">إضغط هنا لطلب المنتج </span>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="elementor-section elementor-top-section elementor-element elementor-element-5a54e77 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5a54e77" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+	<div class="elementor-container elementor-column-gap-default">
+		<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e9ab362" data-id="e9ab362" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+				<div class="elementor-element elementor-element-15f815f elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="15f815f" data-element_type="widget" data-widget_type="divider.default">
+					<div class="elementor-widget-container">
+						<div class="elementor-divider">
+							<span class="elementor-divider-separator">
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-9d74682 elementor-widget elementor-widget-heading" data-id="9d74682" data-element_type="widget" data-widget_type="heading.default">
+					<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">لماذا "ستوماهيرب" ؟</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-01aff04 elementor-widget elementor-widget-heading" data-id="01aff04" data-element_type="widget" data-widget_type="heading.default">
+					<div class="elementor-widget-container">
+						<h2 class="elementor-heading-title elementor-size-default">
+					بكل بساطة لأنه هو الوحيد الذي حقق نتائج رائعة في علاج مشاكل المعدة والجهاز الهضمي بصفة نهائية. و ذلك باعتراف من الجامعة العالمية للطب البديل والتكميلي كما أنه حاصل على شهادة الضمان من مكتب السلامة الصحية "ONSSA" و شهادة العديد من الزبناء</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-f44d482 elementor-widget elementor-widget-spacer" data-id="f44d482" data-element_type="widget" data-widget_type="spacer.default">
+					<div class="elementor-widget-container">
+						<div class="elementor-spacer">
+							<div class="elementor-spacer-inner"></div>
+						</div>
+					</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-7c0dfd9 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7c0dfd9" data-element_type="section">
+					<div class="elementor-container elementor-column-gap-default">
+						<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-ec133af" data-id="ec133af" data-element_type="column">
+							<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-e744a9f elementor-widget elementor-widget-spacer" data-id="e744a9f" data-element_type="widget" data-widget_type="spacer.default">
+									<div class="elementor-widget-container">
+										<div class="elementor-spacer">
+											<div class="elementor-spacer-inner"></div>
+										</div>
+									</div>
+								</div>
+								<div class="elementor-element elementor-element-3a61764 elementor-widget-divider--view-line_text elementor-widget-divider--element-align-center elementor-widget elementor-widget-divider" data-id="3a61764" data-element_type="widget" data-widget_type="divider.default">
+									<div class="elementor-widget-container">
+										<div class="elementor-divider">
+											<span class="elementor-divider-separator">
+												<span class="elementor-divider__text elementor-divider__element"> "ستوماهيرب" الحل السحري</span>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="elementor-element elementor-element-3667672 elementor-widget elementor-widget-image" data-id="3667672" data-element_type="widget" data-widget_type="image.default">
+									<div class="elementor-widget-container">
+									<img width="800" height="800" src="assets/pic/تصميم-لبرودوي-بدون-خلفية.png" class="attachment-large size-large" alt="" >															</div>
+								</div>
+							</div>
+						</div>
+						<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-cc61f0b" data-id="cc61f0b" data-element_type="column">
+							<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-00232e8 elementor-widget elementor-widget-text-editor" data-id="00232e8" data-element_type="widget" data-widget_type="text-editor.default">
+									<div class="elementor-widget-container">
+										<p>تخلص من ألام ومشاكل المعدة  نهائيا في فترة قصيرة بواسطة  الأعشاب الطبيعية و الطبية وبدون أعراض جانبية&nbsp; .</p><p>عند طلبك لمنتوج ستحصل <span style="color: #ff0000;">مجانا</span> على :</p><p>-إستشارة مع أخصائي الطب البديل بقيمة<span style="color: #ff0000;">170 درهم مجانا</span></p><p>-توصيل طلبك إلى منزلك أو المكان الذي تجدده بقيمة <span style="color: #ff0000;">60 درهم مجانا</span></p><p>– تخفيض عند طلب أكثر من منتج تصل قيمة التخفيض إلى <span style="color: #ff0000;">150 درهم</span></p><p>القيمة الإجمالية للمزايا <span style="color: #ff0000;">المجانية</span> : <span style="color: #ff0000;">380 درهم</span>&nbsp;</p><p>بالإضافة إلى عدت مزايا أخرى ستجدها فقط عندنا ,</p><p>ماذا تنتظر أطلب الأن قبل فوات الأوان</p><p><span style="color: #ff0000;">هذا العرض سينتهي في أي لحظة !</span></p>						</div>
+									</div>
+									<div class="elementor-element elementor-element-90078d3 elementor-widget elementor-widget-countdown-timer-widget" data-id="90078d3" data-element_type="widget" data-widget_type="countdown-timer-widget.default">
+										<div class="elementor-widget-container">
+											<div class="countdown-timer-widget">
+												<div id="countdown-timer-90078d3" class="countdown-timer-init style colorDefinition size_sm"> <div class="countdown-items"><span class="ctw-digits">22 </span><span class="ctw-label">ساعة</span></div><div class="countdown-items"> <span class="ctw-digits"> 54 </span><span class="ctw-label">دقيقة</span> </div><div class="countdown-items"><span class="ctw-digits"> 17</span><span class="ctw-label">ثانية</span></div></div>
+												<div id="finished-message-90078d3" class="finished-message"></div>
+											</div>
+											<script>
+																jQuery(function(){
+													jQuery('#countdown-timer-90078d3').countdowntimer({
+											dateAndTime : "2021/08/28 21:42",
+											regexpMatchFormat: "([0-9]{1,3}):([0-9]{1,2}):([0-9]{1,2}):([0-9]{1,2})",
+																		regexpReplaceWith: " <div class='countdown-items'><span class='ctw-digits'>$2 </span><span class='ctw-label'>ساعة</span></div><div class='countdown-items'> <span class='ctw-digits'> $3 </span><span class='ctw-label'>دقيقة</span> </div><div class='countdown-items'><span class='ctw-digits'> $4</span><span class='ctw-label'>ثانية</span></div>",
+																								timeUp : timeisUp,
+														});
+													
+																					
+																				function timeisUp(){
+															jQuery("#finished-message-90078d3").html( "<span>Sorry you are late!</span>" );
+													}
+																		
+														});
+											</script>
+										</div>
+									</div>
+									<div class="elementor-element elementor-element-02342bc elementor-widget elementor-widget-price-table" data-id="02342bc" data-element_type="widget" data-widget_type="price-table.default">
+										<div class="elementor-widget-container">
+											
+											<div class="elementor-price-table">
+												<div class="elementor-price-table__header">
+													<h3 class="elementor-price-table__heading">العرض الحالي</h3>
+													
+													<span class="elementor-price-table__subheading">هذا العرض سينتهي قريبا</span>
+												</div>
+												
+												<div class="elementor-price-table__price">
+													<div class="elementor-price-table__original-price elementor-typo-excluded">319</div>
+													<span class="elementor-price-table__integer-part">190</span>
+													
+													<div class="elementor-price-table__after-price">
+														<span class="elementor-price-table__fractional-part">00</span>
+													</div>
+													
+													
+													<span class="elementor-price-table__period elementor-typo-excluded">درهم فقط</span>							</div>
+													<ul class="elementor-price-table__features-list">
+														<li class="elementor-repeater-item-768e53f">
+															<div class="elementor-price-table__feature-inner">
+															&nbsp;							</div>
+														</li>
+													</ul>
+													
+												</div>
+												<div class="elementor-price-table__ribbon">
+													<div class="elementor-price-table__ribbon-inner">الأكثر طلبا</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<div class="elementor-element elementor-element-8d985ba elementor-align-center elementor-mobile-align-justify elementor-widget elementor-widget-button" data-id="8d985ba" data-element_type="widget" data-widget_type="button.default">
+							<div class="elementor-widget-container">
+								<div class="elementor-button-wrapper">
+									<a href="#scroll-checkout" class="elementor-button-link elementor-button elementor-size-lg" role="button">
+										<span class="elementor-button-content-wrapper">
+											<span class="elementor-button-icon elementor-align-icon-left">
+											<i class="fa  fa-arrow-circle-o-down"></i>
+														</span>
+											<span class="elementor-button-text">إضغط هنا لطلب المنتج </span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+<section class="elementor-section elementor-top-section elementor-element elementor-element-685d818 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="685d818" data-element_type="section">
+	<div class="elementor-container elementor-column-gap-default">
+		<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d53f663" data-id="d53f663" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-0e6a88d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0e6a88d" data-element_type="section">
+					<div class="elementor-container elementor-column-gap-default">
+						<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-279fc1a" data-id="279fc1a" data-element_type="column">
+							<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-7e27e45 elementor-widget elementor-widget-heading" data-id="7e27e45" data-element_type="widget" data-widget_type="heading.default">
+									<div class="elementor-widget-container">
+										<h2 class="elementor-heading-title elementor-size-default">تعتبر المعدة أحد الأعضاء المهمة في الجهاز الهضمي، وقد تتعرض للإصابة بالكثير من الأمراض ومن بينها التهاب فم المعدة (Gastritis) الذي يعتبر واحدًا من أكثر الأمراض شيوعًا فلا يجب التهاون وترك الأمور تزداد سوءا</h2>		</div>
+								</div>
+								<div class="elementor-element elementor-element-a918424 elementor-widget elementor-widget-heading" data-id="a918424" data-element_type="widget" data-widget_type="heading.default">
+									<div class="elementor-widget-container">
+									<h2 class="elementor-heading-title elementor-size-default">عدد كبير من الأشخاص كيعانيو من مشاكل في الأمعاء</h2>		</div>
+								</div>
+								<div class="elementor-element elementor-element-4e21413 elementor-widget elementor-widget-heading" data-id="4e21413" data-element_type="widget" data-widget_type="heading.default">
+									<div class="elementor-widget-container">
+									<h2 class="elementor-heading-title elementor-size-default">واش انت متأكد(ة) أنك ماشي واحد(ة) منهم ؟</h2>		</div>
+								</div>
+								<div class="elementor-element elementor-element-b87cb9c elementor-widget elementor-widget-heading" data-id="b87cb9c" data-element_type="widget" data-widget_type="heading.default">
+									<div class="elementor-widget-container">
+									<h2 class="elementor-heading-title elementor-size-default">إذا بقيت في قضاء الوقت كتفكر في الأمر بلا أي تصرف فراك كضيع وقتك و تقلل من الفرص ديال علاج مشكلة الأمعاء ديالك، و كتقلل من فرصة النجاح في العلاج بشكل كبير. واش كيبالك أن الأمر كيستحق المخاطرة حتى اللحظة التي تولي فيها حالتك غير قابلة للعلاج, وفي نفس الوقت يمكن ليك تحل هذه المشكلة دابا وفي هذه اللحظة ؟</h2>		</div>
+								</div>
+								<div class="elementor-element elementor-element-aac73cf elementor-widget elementor-widget-heading" data-id="aac73cf" data-element_type="widget" data-widget_type="heading.default">
+									<div class="elementor-widget-container">
+									<h2 class="elementor-heading-title elementor-size-default">عند مقارنة منتوجنا "ستوماهيرب" بالمنتجات الأخرى فإنه لا يشبهها بتاتاً.</h2>		</div>
+								</div>
+								<div class="elementor-element elementor-element-c1a7c97 elementor-widget elementor-widget-heading" data-id="c1a7c97" data-element_type="widget" data-widget_type="heading.default">
+									<div class="elementor-widget-container">
+									<h2 class="elementor-heading-title elementor-size-default">لأن منتوجنا ماشي يهدأ ليك الألم لفترة محدودة من الوقت صافي ولاكن يهنيك من سبب الألام نفسه من الجذور، وهذا لأنه يعمل على تنشيط القوة الطبيعية لجسمك بفضل المكونات و الأعشاب الطبيعية الموجودة فيه.كما أن منتجنا مرخص من وزارة الصحة عن طريق مكتب السلامة الصحية للمستهلك</h2>		</div>
+								</div>
+								<div class="elementor-element elementor-element-6411c89 elementor-widget elementor-widget-heading" data-id="6411c89" data-element_type="widget" data-widget_type="heading.default">
+									<div class="elementor-widget-container">
+									<h2 class="elementor-heading-title elementor-size-default">هاد التركيبة ديال "ستوماهيرب" 100% طبيعية و بدون كيماويات ولا مواد حافظة ولا ملونات فقط المواد الطبيعية و لي تبتات الكفاءة ديالها،</h2>		</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="elementor-section elementor-top-section elementor-element elementor-element-30236dc elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="30236dc" data-element_type="section">
+	<div class="elementor-container elementor-column-gap-default">
+		<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d4c95af" data-id="d4c95af" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-8739c3f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8739c3f" data-element_type="section">
+					<div class="elementor-container elementor-column-gap-default">
+						<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-19723fb" data-id="19723fb" data-element_type="column">
+							<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-8414291 elementor-view-stacked elementor-shape-circle elementor-widget elementor-widget-icon" data-id="8414291" data-element_type="widget" data-widget_type="icon.default">
+									<div class="elementor-widget-container">
+										<div class="elementor-icon-wrapper">
+											<div class="elementor-icon">
+											<i aria-hidden="true" class="fa fa-leaf"></i>			</div>
+										</div>
+									</div>
+								</div>
+								<div class="elementor-element elementor-element-ea09f2e elementor-widget elementor-widget-heading" data-id="ea09f2e" data-element_type="widget" data-widget_type="heading.default">
+									<div class="elementor-widget-container">
+									<h2 class="elementor-heading-title elementor-size-default">طبيعي %100</h2>		</div>
+								</div>
+								<div class="elementor-element elementor-element-b45489b elementor-widget elementor-widget-heading" data-id="b45489b" data-element_type="widget" data-widget_type="heading.default">
+									<div class="elementor-widget-container">
+									<h2 class="elementor-heading-title elementor-size-default">أعشاب طبيعية</h2>		</div>
+								</div>
+							</div>
+						</div>
+						<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-a796ef3" data-id="a796ef3" data-element_type="column">
+							<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-bd3e42b elementor-view-stacked elementor-shape-circle elementor-widget elementor-widget-icon" data-id="bd3e42b" data-element_type="widget" data-widget_type="icon.default">
+									<div class="elementor-widget-container">
+										<div class="elementor-icon-wrapper">
+											<div class="elementor-icon">
+											<i aria-hidden="true" class="fa fa-cog"></i>			</div>
+										</div>
+									</div>
+								</div>
+								<div class="elementor-element elementor-element-eb0983e elementor-widget elementor-widget-heading" data-id="eb0983e" data-element_type="widget" data-widget_type="heading.default">
+									<div class="elementor-widget-container">
+									<h2 class="elementor-heading-title elementor-size-default">بدون مواد كيماوية</h2>		</div>
+								</div>
+								<div class="elementor-element elementor-element-82115ba elementor-widget elementor-widget-heading" data-id="82115ba" data-element_type="widget" data-widget_type="heading.default">
+									<div class="elementor-widget-container">
+									<h2 class="elementor-heading-title elementor-size-default">بدون مواد كيماوية لا يسبب أي ضرر</h2>		</div>
+								</div>
+							</div>
+						</div>
+						<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-db0aa89" data-id="db0aa89" data-element_type="column">
+							<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-200a498 elementor-view-stacked elementor-shape-circle elementor-widget elementor-widget-icon" data-id="200a498" data-element_type="widget" data-widget_type="icon.default">
+									<div class="elementor-widget-container">
+										<div class="elementor-icon-wrapper">
+											<div class="elementor-icon">
+											<i aria-hidden="true" class="fa fa-check-circle"></i>			</div>
+										</div>
+									</div>
+								</div>
+								<div class="elementor-element elementor-element-1701bdd elementor-widget elementor-widget-heading" data-id="1701bdd" data-element_type="widget" data-widget_type="heading.default">
+									<div class="elementor-widget-container">
+									<h2 class="elementor-heading-title elementor-size-default">الفعالية</h2>		</div>
+								</div>
+								<div class="elementor-element elementor-element-152a044 elementor-widget elementor-widget-heading" data-id="152a044" data-element_type="widget" data-widget_type="heading.default">
+									<div class="elementor-widget-container">
+									<h2 class="elementor-heading-title elementor-size-default">فعالية كبيرة</h2>		</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="elementor-section elementor-top-section elementor-element elementor-element-fb38ab9 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="fb38ab9" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+	<div class="elementor-container elementor-column-gap-default">
+		<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-33096eb" data-id="33096eb" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+				<div class="elementor-element elementor-element-47c297a6 elementor-widget elementor-widget-heading" data-id="47c297a6" data-element_type="widget" data-widget_type="heading.default">
+					<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">من بين أفضل الأعشاب التي استخدمت في "ستوماهيرب"</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-3a3f9af1 elementor-widget elementor-widget-text-editor" data-id="3a3f9af1" data-element_type="widget" data-widget_type="text-editor.default">
+					<div class="elementor-widget-container">
+						<p>أجود الأعشاب التي تستخدم في إنتاج الأدوية الطبيعية التي تعطي الجسم نشاط و حيوية و تطرد السموم من كافة الجسم&nbsp; بدون أضرار و بدون أي تخوف في استخدامها مهما كان جسم الإنسان سواء للأطفال أو الكبار&nbsp;</p>						</div>
+					</div>
+					<section class="elementor-section elementor-inner-section elementor-element elementor-element-5c90ca86 elementor-section-content-top elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5c90ca86" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-no">
+							<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-1b755102" data-id="1b755102" data-element_type="column">
+								<div class="elementor-widget-wrap elementor-element-populated">
+									<div class="elementor-element elementor-element-e2d6bef elementor-widget elementor-widget-image" data-id="e2d6bef" data-element_type="widget" data-widget_type="image.default">
+										<div class="elementor-widget-container">
+										<img width="300" height="300" src="assets/pic/إكليل-الجبل-300x300.jpg" class="attachment-shop_catalog size-shop_catalog" alt="" >															</div>
+									</div>
+									<div class="elementor-element elementor-element-60f524b3 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="60f524b3" data-element_type="widget" data-widget_type="divider.default">
+										<div class="elementor-widget-container">
+											<div class="elementor-divider">
+												<span class="elementor-divider-separator">
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="elementor-element elementor-element-11c41ce6 elementor-widget elementor-widget-heading" data-id="11c41ce6" data-element_type="widget" data-widget_type="heading.default">
+										<div class="elementor-widget-container">
+										<h5 class="elementor-heading-title elementor-size-default">01.</h5>		</div>
+									</div>
+									<div class="elementor-element elementor-element-23c49848 elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="23c49848" data-element_type="widget" data-widget_type="icon-box.default">
+										<div class="elementor-widget-container">
+											<div class="elementor-icon-box-wrapper">
+												<div class="elementor-icon-box-content">
+													<h3 class="elementor-icon-box-title">
+													<span>إكليل الجبل</span>
+													</h3>
+													<p class="elementor-icon-box-description">يعد إكليل الجبل مصدر غني بالمواد المضادة للأكسدة والالتهابات، والتي تساعد في تعزيز جهاز المناعة، وزيادة تدفق الدم داخل الجسم.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-d233e7b" data-id="d233e7b" data-element_type="column">
+								<div class="elementor-widget-wrap elementor-element-populated">
+									<div class="elementor-element elementor-element-9b325a6 elementor-widget elementor-widget-image" data-id="9b325a6" data-element_type="widget" data-widget_type="image.default">
+										<div class="elementor-widget-container">
+										<img width="300" height="300" src="assets/pic/الينسون-الاخضر-300x300.jpg" class="attachment-shop_catalog size-shop_catalog" alt="" >															</div>
+									</div>
+									<div class="elementor-element elementor-element-7cbb6a6 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="7cbb6a6" data-element_type="widget" data-widget_type="divider.default">
+										<div class="elementor-widget-container">
+											<div class="elementor-divider">
+												<span class="elementor-divider-separator">
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="elementor-element elementor-element-b68094a elementor-widget elementor-widget-heading" data-id="b68094a" data-element_type="widget" data-widget_type="heading.default">
+										<div class="elementor-widget-container">
+										<h5 class="elementor-heading-title elementor-size-default">02.</h5>		</div>
+									</div>
+									<div class="elementor-element elementor-element-6dd3534 elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="6dd3534" data-element_type="widget" data-widget_type="icon-box.default">
+										<div class="elementor-widget-container">
+											<div class="elementor-icon-box-wrapper">
+												<div class="elementor-icon-box-content">
+													<h3 class="elementor-icon-box-title">
+													<span>الينسون الأخضر</span>
+													</h3>
+													<p class="elementor-icon-box-description">يخفف الصداع و طارد للغازات للصغار و للكبار، ويخفف من انتفاخ البطن والاضطرابات المعوية، و يعالج الإسهال والقيء، ويحسن الشهية.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-9d590e8" data-id="9d590e8" data-element_type="column">
+								<div class="elementor-widget-wrap elementor-element-populated">
+									<div class="elementor-element elementor-element-22d8003 elementor-widget elementor-widget-image" data-id="22d8003" data-element_type="widget" data-widget_type="image.default">
+										<div class="elementor-widget-container">
+										<img width="300" height="300" src="assets/pic/ما_هو_النعناع_الفلفلي-300x300.jpg" class="attachment-shop_catalog size-shop_catalog" alt="" >															</div>
+									</div>
+									<div class="elementor-element elementor-element-43b45df elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="43b45df" data-element_type="widget" data-widget_type="divider.default">
+										<div class="elementor-widget-container">
+											<div class="elementor-divider">
+												<span class="elementor-divider-separator">
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="elementor-element elementor-element-be7871b elementor-widget elementor-widget-heading" data-id="be7871b" data-element_type="widget" data-widget_type="heading.default">
+										<div class="elementor-widget-container">
+										<h5 class="elementor-heading-title elementor-size-default">03.</h5>		</div>
+									</div>
+									<div class="elementor-element elementor-element-778aef1 elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="778aef1" data-element_type="widget" data-widget_type="icon-box.default">
+										<div class="elementor-widget-container">
+											<div class="elementor-icon-box-wrapper">
+												<div class="elementor-icon-box-content">
+													<h3 class="elementor-icon-box-title">
+													<span>النعناع الفلفلي</span>
+													</h3>
+													<p class="elementor-icon-box-description">عشب مهدأ للمعدة في حالة الإنتفاخ و الغازات و معروف عنه أنه مساعد في عملية الهضم و يعالج حالات عسر الهضم و المغص </p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-2467097" data-id="2467097" data-element_type="column">
+								<div class="elementor-widget-wrap elementor-element-populated">
+									<div class="elementor-element elementor-element-dcf665e elementor-widget elementor-widget-image" data-id="dcf665e" data-element_type="widget" data-widget_type="image.default">
+										<div class="elementor-widget-container">
+										<img width="300" height="300" src="assets/pic/نبتت-الضرؤ-300x300.jpg" class="attachment-shop_catalog size-shop_catalog" alt="">															</div>
+									</div>
+									<div class="elementor-element elementor-element-c49f5c7 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="c49f5c7" data-element_type="widget" data-widget_type="divider.default">
+										<div class="elementor-widget-container">
+											<div class="elementor-divider">
+												<span class="elementor-divider-separator">
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="elementor-element elementor-element-06f7c83 elementor-widget elementor-widget-heading" data-id="06f7c83" data-element_type="widget" data-widget_type="heading.default">
+										<div class="elementor-widget-container">
+										<h5 class="elementor-heading-title elementor-size-default">04.</h5>		</div>
+									</div>
+									<div class="elementor-element elementor-element-7d1a217 elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="7d1a217" data-element_type="widget" data-widget_type="icon-box.default">
+										<div class="elementor-widget-container">
+											<div class="elementor-icon-box-wrapper">
+												<div class="elementor-icon-box-content">
+													<h3 class="elementor-icon-box-title">
+													<span>عشبة الضرو</span>
+													</h3>
+													<p class="elementor-icon-box-description">تساهم في حماية ووقاية الجهاز الهضمي من الاضطرابات والأمراض، وخاصةً تقرحات المعدة، كما قد تساعد على تنظيم حركة الأمعاء الدقيقة والغليظة، </p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<div class="elementor-element elementor-element-3c309a1 elementor-align-center elementor-mobile-align-justify elementor-widget elementor-widget-button" data-id="3c309a1" data-element_type="widget" data-widget_type="button.default">
+						<div class="elementor-widget-container">
+							<div class="elementor-button-wrapper">
+								<a href="#scroll-checkout" class="elementor-button-link elementor-button elementor-size-lg" role="button">
+									<span class="elementor-button-content-wrapper">
+										<span class="elementor-button-icon elementor-align-icon-left">
+										<i class="fa  fa-arrow-circle-o-down"></i>
+													</span>
+										<span class="elementor-button-text">إضغط هنا لطلب المنتج </span>
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+		<section class="elementor-section elementor-top-section elementor-element elementor-element-a2c9543 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a2c9543" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6c9632fa" data-id="6c9632fa" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-a7b78ef elementor-widget elementor-widget-heading" data-id="a7b78ef" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h2 class="elementor-heading-title elementor-size-default">شهادات بعض الزبناء الذين أستعملو المنتج </h2>		</div>
+							</div>
+							<div class="elementor-element elementor-element-3dce4d4 elementor-widget elementor-widget-text-editor" data-id="3dce4d4" data-element_type="widget" data-widget_type="text-editor.default">
+								<div class="elementor-widget-container">
+									<p>شهادات حقيقة يضعها الزبناء يوميا بعد نجاح العلاج معهم أنت أيضا يمكنك وضع شهادتك بعد استعمال المنتج و الشفاء إن شاء الله&nbsp;</p>						</div>
+								</div>
+								<section class="elementor-section elementor-inner-section elementor-element elementor-element-1d418c70 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1d418c70" data-element_type="section">
+									<div class="elementor-container elementor-column-gap-default">
+										<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-3705be6d" data-id="3705be6d" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-45e6bc42 elementor-widget elementor-widget-image" data-id="45e6bc42" data-element_type="widget" data-widget_type="image.default">
+													<div class="elementor-widget-container">
+														<img src="assets/pic/testimonial-1-1.jpg" title="" alt="">															</div>
+													</div>
+													<div class="elementor-element elementor-element-4f002f0 elementor-widget elementor-widget-heading" data-id="4f002f0" data-element_type="widget" data-widget_type="heading.default">
+														<div class="elementor-widget-container">
+															<h4 class="elementor-heading-title elementor-size-default">لمياء الساليمي</h4>		</div>
+														</div>
+														<div class="elementor-element elementor-element-34efa929 elementor-widget elementor-widget-heading" data-id="34efa929" data-element_type="widget" data-widget_type="heading.default">
+															<div class="elementor-widget-container">
+																<div class="elementor-heading-title elementor-size-default">مهندسة
+																ديكور</div>		</div>
+															</div>
+														</div>
+													</div>
+													<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-6e84e575" data-id="6e84e575" data-element_type="column">
+														<div class="elementor-widget-wrap elementor-element-populated">
+															<div class="elementor-element elementor-element-59635b2d elementor-star-rating-mobile--align-center elementor--star-style-star_fontawesome elementor-widget elementor-widget-star-rating" data-id="59635b2d" data-element_type="widget" data-widget_type="star-rating.default">
+																<div class="elementor-widget-container">
+
+																	<div class="">
+																		<div class="" title="4.5/5" itemtype="http://schema.org/Rating" itemscope="" itemprop="reviewRating">
+																			<i class="fa fa-star"></i>
+																			<i class="fa fa-star"></i>
+																			<i class="fa fa-star"></i>
+																			<i class="fa fa-star"></i>
+																			<i class="fa fa-star"></i>
+																			<span itemprop="ratingValue" class="elementor-screen-only">4.5/5</span>
+																		</div>		
+																	</div>
+																	</div>
+																</div>
+																<div class="elementor-element elementor-element-239191fd elementor-widget elementor-widget-heading" data-id="239191fd" data-element_type="widget" data-widget_type="heading.default">
+																	<div class="elementor-widget-container">
+																		<p class="elementor-heading-title elementor-size-medium">أنا عانيت من مشاكل فالهضم مدة مدة أربع سنوات من عامي الأول فالخدمة بسبب ماكلة الزنقة ماخليت ما جربت فالدوايات لدرجة وليت كانقول صافي صحتي ضاعت لي حتى طلع لي الإشهار وقلت أجي نجرب على الله والحمد لله من الأسبوع الأول وليت بخير و كسبت صحتي من جديد كانصح ناس بيه ولكن ديرو بحالي تبعوه و حبسو ماكلة الزنقة</p>		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</section>
+		<section class="elementor-section elementor-inner-section elementor-element elementor-element-14c9d5e7 elementor-section-content-middle elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="14c9d5e7" data-element_type="section">
+			<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-a00dd0e" data-id="a00dd0e" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-15fcaed7 elementor-star-rating--align-right elementor-star-rating-mobile--align-center elementor--star-style-star_fontawesome elementor-widget elementor-widget-star-rating" data-id="15fcaed7" data-element_type="widget" data-widget_type="star-rating.default">
+							<div class="elementor-widget-container">
+
+								<div class="">
+									<div class="" title="4.5/5" itemtype="http://schema.org/Rating" itemscope="" itemprop="reviewRating">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<span itemprop="ratingValue" class="elementor-screen-only">4.5/5</span>
+									</div>		
+								</div>
+								</div>
+							</div>
+							<div class="elementor-element elementor-element-d8ece16 elementor-widget elementor-widget-heading" data-id="d8ece16" data-element_type="widget" data-widget_type="heading.default">
+								<div class="elementor-widget-container">
+									<p class="elementor-heading-title elementor-size-medium">بسبب طبيعة عملي وإهمالي المستمر تتطورت لدي مراحل متقدمة في الأمعاء تكون لي بسبها بومزوي و كنت أعاني في صمت . اليوم حمد لله 15 يوم وأنا كانستعملو وصحتي تحسنات بشكل كبير</p>		</div>
+								</div>
+							</div>
+						</div>
+						<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-490d86b1" data-id="490d86b1" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-7e408653 elementor-widget elementor-widget-image" data-id="7e408653" data-element_type="widget" data-widget_type="image.default">
+									<div class="elementor-widget-container">
+										<img src="assets/pic/testimonial-2-1.jpg" title="" alt="">															</div>
+									</div>
+									<div class="elementor-element elementor-element-9406aa9 elementor-widget elementor-widget-heading" data-id="9406aa9" data-element_type="widget" data-widget_type="heading.default">
+										<div class="elementor-widget-container">
+											<h4 class="elementor-heading-title elementor-size-default">عماد الصالحي</h4>		</div>
+										</div>
+										<div class="elementor-element elementor-element-6985aee4 elementor-widget elementor-widget-heading" data-id="6985aee4" data-element_type="widget" data-widget_type="heading.default">
+											<div class="elementor-widget-container">
+												<div class="elementor-heading-title elementor-size-default">مؤطر تربوي</div>		</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+		<section class="elementor-section elementor-inner-section elementor-element elementor-element-7d2b5eab elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7d2b5eab" data-element_type="section">
+			<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-76c1ad3b" data-id="76c1ad3b" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-widget-wrap elementor-element-populated">
+							<div class="elementor-element elementor-element-146e9717 elementor-widget elementor-widget-image" data-id="146e9717" data-element_type="widget" data-widget_type="image.default">
+								<div class="">
+									<img src="assets/pic/testimonial-2-2.jpg" title="" alt="">														</div>
+								</div>
+								<div class="elementor-element elementor-element-223af37 elementor-widget elementor-widget-heading" data-id="223af37" data-element_type="widget" data-widget_type="heading.default">
+									<div class="elementor-widget-container">
+										<h4 class="elementor-heading-title elementor-size-default">حسن اليعقوبي</h4>		</div>
+									</div>
+									<div class="elementor-element elementor-element-3185f7ca elementor-widget elementor-widget-heading" data-id="3185f7ca" data-element_type="widget" data-widget_type="heading.default">
+										<div class="elementor-widget-container">
+											<div class="elementor-heading-title elementor-size-default">تاجر</div>		</div>
+										</div>
+									</div>
+								</div>
+								<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-2eefbe02" data-id="2eefbe02" data-element_type="column">
+									<div class="elementor-widget-wrap elementor-element-populated">
+										<div class="elementor-element elementor-element-2ea83b4e elementor-star-rating-mobile--align-center elementor--star-style-star_fontawesome elementor-widget elementor-widget-star-rating" data-id="2ea83b4e" data-element_type="widget" data-widget_type="star-rating.default">
+											<div class="elementor-widget-container">
+
+											<div class="">
+												<div class="" title="4.5/5" itemtype="http://schema.org/Rating" itemscope="" itemprop="reviewRating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<span itemprop="ratingValue" class="elementor-screen-only">4.5/5</span></div>	
+
+												</div>
+											</div>
+										</div>
+										<div class="elementor-element elementor-element-811f863 elementor-widget elementor-widget-heading" data-id="811f863" data-element_type="widget" data-widget_type="heading.default">
+											<div class="elementor-widget-container">
+												<p class="elementor-heading-title elementor-size-medium">ماشي من العادة ديالي نكمنتي ولا ندير تعليق ولاكن ما فيها باس لواحد يعاود التجربة ديالو باش الناس تستافد , المهم و بي أختصار لي نأكد عليه أن الشفاء بيد الله و السبب هو ستوماهيرب دقا ب بطلا .</p>		</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</section>
+		<section class="elementor-section elementor-top-section elementor-element elementor-element-6ba0b9d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6ba0b9d" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7c4daa4" data-id="7c4daa4" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-2a7ad07 elementor-widget-divider--view-line_text elementor-widget-divider--element-align-center elementor-widget elementor-widget-divider" data-id="2a7ad07" data-element_type="widget" data-widget_type="divider.default">
+							<div class="elementor-widget-container">
+								<div class="elementor-divider">
+									<span class="elementor-divider-separator">
+										<span class="elementor-divider__text elementor-divider__element">رأي المختصين في المنتج</span>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="elementor-section elementor-top-section elementor-element elementor-element-65902c32 elementor-reverse-tablet elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="65902c32" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-63738b46" data-id="63738b46" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-7de6fad7 elementor-widget elementor-widget-heading" data-id="7de6fad7" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h2 class="elementor-heading-title elementor-size-default">شهادة بسيطة في حق العسل السحري</h2>		</div>
+							</div>
+							<div class="elementor-element elementor-element-3c04a734 elementor-widget elementor-widget-heading" data-id="3c04a734" data-element_type="widget" data-widget_type="heading.default">
+								<div class="elementor-widget-container">
+									<p class="elementor-heading-title elementor-size-medium">منذ سنوات و نحن نجتمع كل سنة لمناقشة مستجدات الطب البديل وأول ما نناقشه هو مشاكل الأمعاء لأنها هي الأكثر شيوعا في عصرنا الحالي،  لذا وجب علينا إيجاد الحل الفعال،فقررنا تطوير "ستوماهيرب" وبعد تجربته علي أكثر من 1000 مريض من مختلف الأعمار تحصلنا على نتائج جد مرضية بعدها  تبين لنا أننا توصلنا إلى الحل رقم واحد لكل مشاكل الأمعاء .</p>		</div>
+								</div>
+								<div class="elementor-element elementor-element-423dfee elementor-align-center elementor-mobile-align-justify elementor-widget elementor-widget-button" data-id="423dfee" data-element_type="widget" data-widget_type="button.default">
+									<div class="elementor-widget-container">
+										<div class="elementor-button-wrapper">
+											<a href="#scroll-checkout" class="elementor-button-link elementor-button elementor-size-lg" role="button">
+												<span class="elementor-button-content-wrapper">
+													<span class="elementor-button-icon elementor-align-icon-left">
+														<i class="fa  fa-arrow-circle-o-down"></i>
+																	</span>
+														<span class="elementor-button-text">إضغط هنا لطلب المنتج </span>
+													</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-403262c" data-id="403262c" data-element_type="column">
+								<div class="elementor-widget-wrap elementor-element-populated">
+									<div class="elementor-element elementor-element-0869c1d elementor-widget elementor-widget-image" data-id="0869c1d" data-element_type="widget" data-widget_type="image.default">
+										<div class="elementor-widget-container">
+											<img width="2000" height="2882" src="assets/pic/favpng_doctor-of-medicine-health-care-hospital-physician.png" class="attachment-full size-full" alt="">															</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-48f595b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="48f595b" data-element_type="section">
+							<div class="elementor-container elementor-column-gap-default">
+								<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5a3802d" data-id="5a3802d" data-element_type="column">
+									<div class="elementor-widget-wrap elementor-element-populated">
+										<div class="elementor-element elementor-element-b49ea34 elementor-widget elementor-widget-spacer" data-id="b49ea34" data-element_type="widget" data-widget_type="spacer.default">
+											<div class="elementor-widget-container">
+												<div class="elementor-spacer">
+													<div class="elementor-spacer-inner"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-3d545cf elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3d545cf" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-container elementor-column-gap-default">
+								<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8757914" data-id="8757914" data-element_type="column">
+									<div class="elementor-widget-wrap elementor-element-populated">
+										<div class="elementor-element elementor-element-2bae7f2 elementor-widget-divider--view-line_text elementor-widget-divider--element-align-center elementor-widget elementor-widget-divider" data-id="2bae7f2" data-element_type="widget" data-widget_type="divider.default">
+											<div class="elementor-widget-container">
+												<div class="elementor-divider">
+													<span class="elementor-divider-separator">
+														<span class="elementor-divider__text elementor-divider__element">طريقة الإستعمال</span>
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-element elementor-element-ba67ad4 elementor-align-center elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="ba67ad4" data-element_type="widget" data-widget_type="icon-list.default">
+											<div class="elementor-widget-container">
+												<ul class="elementor-icon-list-items">
+													<li class="elementor-icon-list-item">
+														<span class="elementor-icon-list-icon">
+															<i aria-hidden="true" class="fa fa-check"></i>						</span>
+															<span class="elementor-icon-list-text">ملعقة صغيرة تؤخد مع الماء قبل الوجبات بربع ساعة على الأقل
+ </span>
+														</li>
+														<li class="elementor-icon-list-item">
+															<span class="elementor-icon-list-icon">
+																<i aria-hidden="true" class="fa fa-check"></i>						</span>
+																<span class="elementor-icon-list-text"></span>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+<section class="elementor-section elementor-top-section elementor-element elementor-element-26ac69e5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="26ac69e5" data-element_type="section" id="scroll-checkout">
+	<div class="elementor-container elementor-column-gap-default">
+		<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-762cfe57" data-id="762cfe57" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+				<div class="elementor-element elementor-element-f9596e7 elementor-widget elementor-widget-heading" data-id="f9596e7" data-element_type="widget" data-widget_type="heading.default">
+					<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">إملئ الإستمارة لتأكيد الطلب !</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-ae99b73 elementor-widget elementor-widget-checkout-form" data-id="ae99b73" data-element_type="widget" data-widget_type="checkout-form.default">
+					<div class="elementor-widget-container">
+						<div class="wcf-el-checkout-form cartflows-elementor__checkout-form" data-settings-data="[]">
+							<div id="wcf-embed-checkout-form" class="wcf-embed-checkout-form wcf-embed-checkout-form-two-column wcf-field-default">
+								<!-- CHECKOUT SHORTCODE -->
+								<div class="woocommerce"><div class="woocommerce-notices-wrapper"></div><div class="woocommerce-notices-wrapper"></div>
+								<form class="checkout woocommerce-checkout" enctype="multipart/form-data" id="myForm" novalidate="novalidate">
+									
+									<input name="Produit" id="Produit" value="Test Product" style="display:none;" type="text" >
+									<input name="DateOrder" id="DateOrder" value="Not Found" style="display:none;" type="text" >
+									<input name="Adresse" id="Adresse" value="" style="display:none;" type="text" >
+									
+									<div class="" id="customer_details">
+										<div class="">
+											<div class="woocommerce-billing-fields">
+												
+												
+												
+												<select id="Prix" name="Prix">
+												<option value="199">1X 190 dh</option>
+												<option value="300">2X 300 dh</option>
+												<option value="400">3 b 400 dh</option>
+												</select>
+												
+												
+												<div class="woocommerce-billing-fields__field-wrapper">
+													<p class="form-row form-row-first thwcfd-field-wrapper thwcfd-field-text validate-required" id="billing_first_name_field" data-priority="10">
+														<label for="billing_first_name" class="">
+															<span style="font-weight: bold;font-size: 14px;font-family: 'Cairo'">اكتب اسمك الكامل هنا</span>&nbsp;
+															<abbr class="required" title="مطلوب">*</abbr>
+														</label>
+														<span class="woocommerce-input-wrapper">
+															<input type="text" class="input-text " name="Nom" id="Nom" placeholder="" value="" autocomplete="given-name">
+														</span>
+													</p>
+
+														<p class="form-row form-row-wide thwcfd-field-wrapper thwcfd-field-tel form-row-full validate-required validate-phone" id="billing_phone_field" data-priority="100">
+															<label for="billing_phone" class="">
+																<span style="font-weight: bold;font-size: 14px;font-family: 'Cairo'">المدينة</span>&nbsp;
+																<abbr class="required" title="مطلوب">*</abbr>
+															</label>
+															<span class="woocommerce-input-wrapper">
+																<input type="text" class="input-text " name="Ville" id="Ville" placeholder="" value="" autocomplete="tel"></span>
+															</p>
+															<p class="form-row form-row-wide thwcfd-field-wrapper thwcfd-field-tel form-row-full validate-required validate-phone" id="billing_phone_field" data-priority="100">
+																<label for="billing_phone" class="">
+																	<span style="font-weight: bold;font-size: 14px;font-family: 'Cairo'">اكتب رقم الهاتف هنا</span>&nbsp;
+																	<abbr class="required" title="مطلوب">*</abbr>
+																</label>
+																<span class="woocommerce-input-wrapper">
+																	<input type="tel" class="input-text " name="Tele" id="Tele" placeholder="" value="" autocomplete="tel">
+																</span>
+															</p>	
+														</div>
+												</div>
+											</div>
+											<div class="wcf-col-2 col-2">
+												<div class="woocommerce-shipping-fields">
+												</div>
+												<div class="woocommerce-additional-fields">
+													
+													
+													<input type="hidden" class="input-hidden _wcf_flow_id" name="_wcf_flow_id" value="139"><input type="hidden" class="input-hidden _wcf_checkout_id" name="_wcf_checkout_id" value="140"></div>
+												</div>
+											</div>
+											
+											
+												
+											<div class="">
+												
+												
+												
+												
+												
+												
+												<div id="order_review" class="woocommerce-checkout-review-order">
+													
+															
+															<div id="payment" class="woocommerce-checkout-payment">
+																
+																<div class="form-row place-order">
+																	<noscript>
+																	بما أن متصفحك لا يدعم جافاسكربت أو أنها معطلة، يرجى التتأكد من الضغط على زرّ <em>تحديث المجموع</em> قبل تأكيد طلبك. قد يتم تحميلك أكثر من المبلغ المذكور أعلاه إذا لم تفعل ذلك.			<br/><button type="submit" class="button alt" name="woocommerce_checkout_update_totals" value="تحديث الإجمالي">تحديث الإجمالي</button>
+																	</noscript>
+															
+																
+																
+																<button type="submit" class="button alt" id="btn_order" name="form" value="تأكيد الطلب" data-value="تأكيد الطلب">تأكيد الطلب</button>
+																
+															
+															</div>
+															</div>
+														</div>
+														
+													</div>
+													
+													</form>
+													
+											</div>
+											<!-- END CHECKOUT SHORTCODE -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+<section class="elementor-section elementor-top-section elementor-element elementor-element-3218fa8 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3218fa8" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+	<div class="elementor-container elementor-column-gap-default">
+		<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6950043" data-id="6950043" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+				<div class="elementor-element elementor-element-3aeab8c elementor-widget-divider--view-line_text elementor-widget-divider--element-align-center elementor-widget elementor-widget-divider" data-id="3aeab8c" data-element_type="widget" data-widget_type="divider.default">
+					<div class="elementor-widget-container">
+						<div class="elementor-divider">
+							<span class="elementor-divider-separator">
+								<span class="elementor-divider__text elementor-divider__element">الأسئلة الشائعة</span>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-1b40242 elementor-widget-divider--view-line_text elementor-widget-divider--element-align-center elementor-widget elementor-widget-divider" data-id="1b40242" data-element_type="widget" data-widget_type="divider.default">
+					<div class="elementor-widget-container">
+						<div class="elementor-divider">
+							<span class="elementor-divider-separator">
+								<span class="elementor-divider__text elementor-divider__element">كيف أطلب المنتج ؟</span>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-54ca920 elementor-align-center elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="54ca920" data-element_type="widget" data-widget_type="icon-list.default">
+					<div class="elementor-widget-container">
+						<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+								<span class="elementor-icon-list-icon">
+								<i aria-hidden="true" class="fa fa-check"></i>						</span>
+								<span class="elementor-icon-list-text">بعد ملئ الإستمارة فيها الإسم و العنوان و رقم الهاتف و الضغط على تأكيد الطلب مباشرة سيتصل بك أحد وكلائنا  لتأكيد طلبك </span>
+							</li>
+							<li class="elementor-icon-list-item">
+								<span class="elementor-icon-list-icon">
+								<i aria-hidden="true" class="fa fa-check"></i>						</span>
+								<span class="elementor-icon-list-text">أو الطلب مباشرة على الواتساب من هنا :</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-bfe684f elementor-widget elementor-widget-image" data-id="bfe684f" data-element_type="widget" data-widget_type="image.default">
+					<div class="elementor-widget-container">
+						<a href="https://api.whatsapp.com/send/?phone=212660578000&amp;text&amp;app_absent=0">
+						<img width="300" height="120" src="https://eslai.com/wp-content/uploads/2021/05/إضغط-هنا-للطلب-واتساب-300x120.png" class="attachment-medium size-medium" alt="" loading="lazy" srcset="https://eslai.com/wp-content/uploads/2021/05/إضغط-هنا-للطلب-واتساب-300x120.png 300w, https://eslai.com/wp-content/uploads/2021/05/إضغط-هنا-للطلب-واتساب-1024x410.png 1024w, https://eslai.com/wp-content/uploads/2021/05/إضغط-هنا-للطلب-واتساب-768x308.png 768w, https://eslai.com/wp-content/uploads/2021/05/إضغط-هنا-للطلب-واتساب-1536x615.png 1536w, https://eslai.com/wp-content/uploads/2021/05/إضغط-هنا-للطلب-واتساب-600x240.png 600w, https://eslai.com/wp-content/uploads/2021/05/إضغط-هنا-للطلب-واتساب.png 1545w" sizes="(max-width: 300px) 100vw, 300px">								</a>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-e049ddf elementor-widget-divider--view-line_text elementor-widget-divider--element-align-center elementor-widget elementor-widget-divider" data-id="e049ddf" data-element_type="widget" data-widget_type="divider.default">
+					<div class="elementor-widget-container">
+						<div class="elementor-divider">
+							<span class="elementor-divider-separator">
+								<span class="elementor-divider__text elementor-divider__element">كم يستغرق توصيل طلبي ؟</span>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-0d83e6c elementor-align-center elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="0d83e6c" data-element_type="widget" data-widget_type="icon-list.default">
+					<div class="elementor-widget-container">
+						<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+								<span class="elementor-icon-list-icon">
+								<i aria-hidden="true" class="fa fa-check"></i>						</span>
+								<span class="elementor-icon-list-text">تتم معالجة طلبك فور طلبه من هنا في الموقع أو على الواتساب , حيث يتم الإتصال بك للمزيد من معلومات الشحن و إستفساراتكم</span>
+							</li>
+							<li class="elementor-icon-list-item">
+								<span class="elementor-icon-list-icon">
+								<i aria-hidden="true" class="fa fa-check"></i>						</span>
+								<span class="elementor-icon-list-text">بعدها يتم شحن طلباتكم في أقل من 24 ساعة إل48 ساعة كحد أقصى على حسب المدينة</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-a9ba843 elementor-widget-divider--view-line_text elementor-widget-divider--element-align-center elementor-widget elementor-widget-divider" data-id="a9ba843" data-element_type="widget" data-widget_type="divider.default">
+					<div class="elementor-widget-container">
+						<div class="elementor-divider">
+							<span class="elementor-divider-separator">
+								<span class="elementor-divider__text elementor-divider__element">كيف يمكنني الدفع ؟</span>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-04cb55d elementor-align-center elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="04cb55d" data-element_type="widget" data-widget_type="icon-list.default">
+					<div class="elementor-widget-container">
+						<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+								<span class="elementor-icon-list-icon">
+								<i aria-hidden="true" class="fa fa-check"></i>						</span>
+								<span class="elementor-icon-list-text">نحن ندعم خدمة الدفع عند الإستلام , سوف تتوصل بطلبك إلى المنزل أو المكان الذي تريد مع أحد موزعينا مجانا و بعدها تتم عملية الدفع</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-33f41a3 elementor-widget-divider--view-line_text elementor-widget-divider--element-align-center elementor-widget elementor-widget-divider" data-id="33f41a3" data-element_type="widget" data-widget_type="divider.default">
+					<div class="elementor-widget-container">
+						<div class="elementor-divider">
+							<span class="elementor-divider-separator">
+								<span class="elementor-divider__text elementor-divider__element">ماهي الضمانات ؟</span>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-b423153 elementor-align-center elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="b423153" data-element_type="widget" data-widget_type="icon-list.default">
+					<div class="elementor-widget-container">
+						<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+								<span class="elementor-icon-list-icon">
+								<i aria-hidden="true" class="fa fa-check"></i>						</span>
+								<span class="elementor-icon-list-text">نضمن لك أن المنتج مرخص من مكتب السلامة الصحية onssa و أن المنتج دو جودة و فعالية </span>
+							</li>
+							<li class="elementor-icon-list-item">
+								<span class="elementor-icon-list-icon">
+								<i aria-hidden="true" class="fa fa-check"></i>						</span>
+								<span class="elementor-icon-list-text">و نضمن لك أسترجاع أموالك بالكامل في حالة عدم تطابق صورة  المنتج مع ما سوف نقوم بإرساله لك</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="elementor-section elementor-top-section elementor-element elementor-element-0e09636 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0e09636" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+	<div class="elementor-container elementor-column-gap-default">
+		<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7fe0726" data-id="7fe0726" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+				<div class="elementor-element elementor-element-2ff29fe elementor-widget elementor-widget-heading" data-id="2ff29fe" data-element_type="widget" data-widget_type="heading.default">
+					<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">This site is in no way sponsored or endorsed by Facebook. Facebook is a trademark of FACEBOOK, INC. </h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-04006df elementor-widget elementor-widget-heading" data-id="04006df" data-element_type="widget" data-widget_type="heading.default">
+					<div class="elementor-widget-container">
+						<h2 class="elementor-heading-title elementor-size-default">جميع الحقوق محفوظة لكل المحتوى و المنتجات الموجود في الموقع أي تزوير أو سرقة أو محاولة تقليد
+					سيعاقب عليه القانون , و الشخص المسؤول عن هذا الفعل سيتم إتخاذ جميع الإجراآت و التدابير القانونية إتجاهه !!</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-6275b08 elementor-widget elementor-widget-heading" data-id="6275b08" data-element_type="widget" data-widget_type="heading.default">
+					<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Copyright © 2021  All Right Reserved</h2>		</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script src="https://eslai.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=5.4.2" id="woocommerce-js"></script>
+
+<script src="https://eslai.com/wp-content/plugins/woocommerce/assets/js/frontend/country-select.min.js?ver=5.4.2" id="wc-country-select-js"></script>
+
+<script src="https://eslai.com/wp-content/plugins/woocommerce/assets/js/frontend/address-i18n.min.js?ver=5.4.2" id="wc-address-i18n-js"></script>
+
+<script src="https://eslai.com/wp-content/plugins/woocommerce/assets/js/frontend/checkout.min.js?ver=5.4.2" id="wc-checkout-js"></script>
+<script src="https://eslai.com/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=5.4.2" id="wc-cart-fragments-js"></script>
+<script src="https://eslai.com/wp-content/plugins/cartflows/assets/js/checkout-template.js?ver=1.6.14" id="wcf-checkout-template-js"></script>
+<script src="https://eslai.com/wp-includes/js/wp-embed.min.js?ver=5.7.2" id="wp-embed-js"></script>
+<script src="https://eslai.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.2.4" id="elementor-webpack-runtime-js"></script>
+<script src="https://eslai.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.2.4" id="elementor-frontend-modules-js"></script>
+<script src="https://eslai.com/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.0.4" id="elementor-sticky-js"></script>
+<script src="https://eslai.com/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.0.4" id="elementor-pro-frontend-js"></script>
+<script src="https://eslai.com/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js"></script>
+<script src="https://eslai.com/wp-includes/js/jquery/ui/core.min.js?ver=1.12.1" id="jquery-ui-core-js"></script>
+<script src="https://eslai.com/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=5.3.6" id="swiper-js"></script>
+<script src="https://eslai.com/wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js?ver=3.2.4" id="share-link-js"></script>
+<script src="https://eslai.com/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js?ver=4.8.1" id="elementor-dialog-js"></script>
+<script src="https://eslai.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.2.4" id="elementor-frontend-js"></script><span id="elementor-device-mode" class="elementor-screen-only"></span>
+<script src="https://eslai.com/wp-content/plugins/elementor/assets/js/preloaded-modules.min.js?ver=3.2.4" id="preloaded-modules-js"></script>
+<script src="https://eslai.com/wp-includes/js/underscore.min.js?ver=1.8.3" id="underscore-js"></script>
+<script id="wp-util-js-extra">
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+</script>
+<script src="https://eslai.com/wp-includes/js/wp-util.min.js?ver=5.7.2" id="wp-util-js"></script>
+<script id="wpforms-elementor-js-extra">
+var wpformsElementorVars = {"captcha_provider":"recaptcha","recaptcha_type":"v2"};
+</script>
+
+
+<script type="text/javascript" src="leads.js"></script>
+    <script>
+	var today = new Date();
+	var dd = String(today.getDate()).padStart(2, '0');
+	var mm = String(today.getMonth() + 1).padStart(2, '0');
+	var hh = today.getHours()-1;
+	var min = today.getMinutes();
+
+	today = dd + '/' + mm + ' - ' + hh + ':' + min;
+	
+	document.getElementById("DateOrder").value = today;
+    </script>
+
+</body>
+</html>
